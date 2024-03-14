@@ -1,0 +1,62 @@
+---
+title: 'No title'
+teaser: 'No teaser'
+summary: 'No summary'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name='title' content={{title}}>
+  <meta name='description' content={{teaser}}>
+  <meta name='author' content='Daniel Dafoe'>
+
+  <meta name='twitter:card' content='summary'>
+  <meta name='twitter:site' content='@danieldafoe'>
+  <meta name='twitter:creator' content='@danieldafoe'>
+  <meta name='twitter:img' content='../assets/og.jpg'>
+  <meta name='twitter:img:alt' content=''>
+
+  <meta name='og:type' content='article'>
+  <meta name='og:title' content={{title}}>
+  <meta name='og:description' content={{teaser}}>
+  <meta name='og:url' content='https://blog.danieldafoe.com'>
+  <meta name='og:site_name' content=''>
+  <meta name='og:locale' content='en_CA'>
+  <meta name='og:image' content='../assets/og.jpg'>
+
+  <link rel='canonical' href='https://blog.danieldafoe.com'>
+  <link rel="stylesheet" href="/css.css">
+  <link rel="icon" href="/assets/favicon.svg">
+
+  <title>{{ title }} - Mind the Drivel</title>
+</head>
+<body class='post'>
+  <article>
+    <header>
+      <h1>
+        {{ title }}
+      </h1>
+      <div class='metadata'>
+        <p>
+          <b>Published:</b> {{ page.date | prettyDate }}
+        </p>
+        {# <ul class="tags">
+          {% for tag in tags %} <li>{{ tag }}</li> {% endfor %}
+        </ul> #}
+      </div>
+    </header>
+
+    <div class="post-content">
+      {{ content | safe }}
+    </div>
+    
+    <div class="post-footer">
+      The impressive thoughtpiece you just read was conceived by none other than <a href='https://danieldafoe.com'>Daniel Dafoe</a>—a web engineer, designer, and accessibility expert living in California.
+    </div>
+  </article>
+</body>
+</html>

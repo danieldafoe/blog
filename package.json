@@ -1,0 +1,15 @@
+{
+  "name": "blog-11ty",
+  "scripts": {
+    "build": "bun x @11ty/eleventy --output=_site",
+    "start": "bun x @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
