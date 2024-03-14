@@ -1,5 +1,6 @@
 ---
 title: 'No title'
+shareTitle: 'No share title'
 teaser: 'No teaser'
 summary: 'No summary'
 ---
@@ -10,29 +11,29 @@ summary: 'No summary'
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name='title' content={{title}}>
-  <meta name='description' content={{teaser}}>
+  <meta name='title' content="{{shareTitle}}">
+  <meta name='description' content="{{teaser}}">
   <meta name='author' content='Daniel Dafoe'>
 
-  <meta name='twitter:card' content='summary'>
+  <meta property='og:type' content='article'>
+  <meta property='og:title' content="{{shareTitle}}">
+  <meta property='og:description' content="{{teaser}}">
+  <meta property='og:image' content='https://blog.danieldafoe.com/assets/og.jpg'>
+  <meta property='og:url' content='https://blog.danieldafoe.com'>
+  <meta property='og:site_name' content='perspectives: a daniel dafoe blog'>
+  <meta property='og:locale' content='en_CA'>
+
+  <meta name='twitter:card' content='summary_large_image'>
   <meta name='twitter:site' content='@danieldafoe'>
   <meta name='twitter:creator' content='@danieldafoe'>
-  <meta name='twitter:img' content='../assets/og.jpg'>
-  <meta name='twitter:img:alt' content=''>
-
-  <meta name='og:type' content='article'>
-  <meta name='og:title' content={{title}}>
-  <meta name='og:description' content={{teaser}}>
-  <meta name='og:url' content='https://blog.danieldafoe.com'>
-  <meta name='og:site_name' content=''>
-  <meta name='og:locale' content='en_CA'>
-  <meta name='og:image' content='../assets/og.jpg'>
+  <meta name='twitter:img' content='https://blog.danieldafoe.com/assets/og.jpg'>
+  <meta name='twitter:img:alt' content='perspectives: a daniel dafoe blog'>
 
   <link rel='canonical' href='https://blog.danieldafoe.com'>
   <link rel="stylesheet" href="/css.css">
-  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="icon" href="https://blog.danieldafoe.com/assets/favicon.svg">
 
-  <title>{{ title }} - Mind the Drivel</title>
+  <title>{{ shareTitle }} - a daniel dafoe perspective</title>
 </head>
 <body class='post'>
   <article>

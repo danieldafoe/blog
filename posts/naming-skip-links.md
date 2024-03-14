@@ -1,13 +1,13 @@
 ---
 layout: post.njk
-title: 'Write better skip link labels'
-seoTitle: 'Write better skip link labels'
+title: "Write better skip link labels"
+shareTitle: "Write better accessibility skip link labels"
+teaser: "Have a website? You likely need a skip link. How should you label a skip link? Come learn."
 date: 2024-03-05
 tags: ['accessibility', 'copywriting']
 ---
 
 Around the web, I sometimes see "Skip to main" as the visual label for skip links that take people to the main content of the page. This is problematic.
-
 
 ## What's a main, anyway? 
 
@@ -18,7 +18,6 @@ What "main" refers to in the context of the web is the <a href='https://develope
 Browsing a web page about available mortgage rates? The mortgage rate information should go inside the <code>&lt;main&gt;</code> element. 
 
 So, by skipping to the main element, if web authors have done their job, people can rest easy knowing they're about to skip sitewide navigation or paranthetical information and cut right to what they came to learn about.
-
 
 ## What's a skip link?
 
