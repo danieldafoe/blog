@@ -25,7 +25,7 @@ module.exports = function(eleventyConfig) {
 
   // Filters
   eleventyConfig.addFilter("prettyDate", (date) => {
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     const newDate = new Date(date);
 
     return `${months[newDate.getMonth()]} ${newDate.getDate()+1}, ${newDate.getFullYear()}`;
