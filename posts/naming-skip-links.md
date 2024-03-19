@@ -2,64 +2,61 @@
 layout: post.njk
 title: "Write better skip link labels"
 shareTitle: "Write better accessibility skip link labels"
-teaser: "Have a website? You likely need a skip link. How should you label a skip link? Come learn."
-date: 2024-03-05
+teaser: "Yes, there's a best way to label your skip links."
+date: 2024-03-18
 tags: ['accessibility', 'copywriting']
 ---
 
-Around the web, I sometimes see "Skip to main" as the visual label for skip links that take people to the main content of the page. This is problematic.
+Around the web, I sometimes see "Skip&nbsp;to&nbsp;main" as the visual label for skip links that take people to the main content of the page. This is problematic.
 
-## What's a main, anyway? 
+## The issue with "Skip to main"
 
-Saying "Skip to main" isn't valuable to everyone. This is due to the technical nature of what a "main" is.
+Saying "Skip&nbsp;to&nbsp;main" isn't valuable to everyone. This is due to the technical nature of what a "main" even is. And no, it's not your goto character in a video game.
 
-What "main" refers to in the context of the web is the <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main'>HTML <code>&lt;main&gt;</code> element</a>. This element should contain the most relevant information of any given web page.
+What "main" refers to in the context of the web is the <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main'>HTML <code>&lt;main&gt;</code> element</a>. This element should contain the most relevant information of any given web page you visit.
 
-Browsing a web page about available mortgage rates? The mortgage rate information should go inside the <code>&lt;main&gt;</code> element. 
+Browsing a web page about available mortgage rates? The mortgage rate information should go inside the <code>&lt;main&gt;</code> element.
 
-So, by skipping to the main element, if web authors have done their job, people can rest easy knowing they're about to skip sitewide navigation or paranthetical information and cut right to what they came to learn about.
+To put this back into context, we should never assume someone is familiar with web development jargon because they browse the web. People who [navigate by keyboard only](https://www.w3.org/WAI/people-use-web/user-stories/#reporter) or [use a switch device](https://www.24a11y.com/2018/i-used-a-switch-control-for-a-day/) are just as unlikely to know what an HTML <code>&lt;main&gt;</code> element is as anyone else.
 
-## What's a skip link?
-
-Skip links are a valuable accessibility feature that web authors add to their web pages. They are links that serve a special purpose: they allow people to quickly _skip over_ parts of a web page.
-
-These navigational links are useful for people browsing with a keyboard (by using Tab and Shift-Tab) or assistive technology that are limited to sequential navigation.
-
-Skip links are often implemented as the first tabbable item on a website. Again, this is a great consideration for anyone that's browsing a web page in sequential order from top-to-bottom. As soon as you navigate to a web site, try pressing the Tab key to see if there's a skip link set up.
 
 ## Which phrase is best?
 
-### Skip navigation
+<p><em>Mirror, Mirror, on the wall, which is the clearest phrase of all?</em></p>
+
+<figure>
+  <img src='https://preview.redd.it/in-snow-white-and-the-seven-dwarves-1937-the-symbols-v0-8a5gsqw2n7y91.jpg?auto=webp&s=4692986f0b131b490231df39a19ce6181f8ba2f0' alt='Evil Queen in black robe and gold crown standing before a large mirror' />
+  <figcaption>Evil Sorceress from Snow White standing in front of the Magic Mirror.</figcaption>
+</figure>
 
 ### Skip to main content
 
+<strong>Judgment:</strong> Preferred.
+
+This has no caveat or exceptions. This is by far the clearest of the presented options. The phrase "main content" makes this more understandable than other options.
+
+### Skip navigation
+
+<strong>Judgment:</strong> Acceptable.
+
+<strong>Caveat:</strong> Only use this phrasing if what someone is skipping is really just navigation (i.e., items within a `<nav>` element). If anything other than navigation will be skipped—like search functionality—be very careful about this wording.
+
+
 ### Skip to content
+
+<strong>Judgment:</strong> Avoid.
+
+<strong>Rationale:</strong> Everything on your web page is content. How will someone know which content they're skipping to? If you tell them you're skipping to content, will they know that they missed other information?
 
 ### Skip to main
 
-Telling someone they can "skip to content" is better than "skip to main". That much is true. That said, everything on your website is content to a visitor. 
+<strong>Judgment:</strong> Avoid.
 
+<strong>Rationale:</strong> Everything on your web page is content. How will someone know which content they're skipping to? If you tell them you're skipping to content, will they know that they missed other information?
 
-## Examples around the web
-
-Let's take a look around the web at other examples of skipping content—not only for accessibility.
-
-- Recipe sites often employ "Jump to recipe". This lets you skip over the recipe instructions and preamble about substitutes, etc.
-- Many article-reading sites like news outlets and the like employ "Back to top" since their web articles are often long and require a lot of scrolling. Instead of forcing someone to scroll back to the top of the page, they can opt to click a button and zoom right back up.
 
 ## Recommendation
 
-1. Use the context of what the page's content is about. to deliver the highest level of understanding for your skip link. Would the skip link direct your user to an article? Mention "Skip to article"; would it take them to a recipe? "Skip to recipe". (I can't tell you how badly I want that on recipe sites.)
+I believe "Skip to main content" is the most understandable and the clearest call to action.
 
-2. Use "Skip to main content".
-
-Don't take my word for it: [WebAIM suggests "Skip to main content"](https://webaim.org/techniques/skipnav/#wording) as well.
-
-
-## Spiritual sisters
-
-Some other skipping mechanisms that follow the skip link spirit are:
-- Netflix's "Skip intro" and "Skip recap" buttons
-- Recipe sites with "Jump to Recipe" buttons
-
-While skip links are often included 
+If you're in a position where you can implement a skip link but can't choose the content yourself (because you're an engineer and not a copywriter), having a skip link is far better than not having one.
