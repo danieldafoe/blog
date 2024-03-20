@@ -34,6 +34,7 @@
   --post-metadata-fg: var(--light);
   --post-footer-bg: var(--primary);
   --post-footer-fg: var(--darkest);
+  --post-footer-link-underline: var(--darkest);
 
   --h1-fg: var(--primary);
   --h2-fg: var(--primary);
@@ -96,7 +97,7 @@ p {
 
 a {
   color: var(--link-fg-clr);
-  transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) 150ms;
+  /* transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) 150ms; */
   text-decoration-thickness: 2px;
   text-decoration-color: var(--link-underline-clr);
 
