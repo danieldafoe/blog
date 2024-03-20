@@ -1,17 +1,12 @@
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 
 module.exports = function(eleventyConfig) {
-  // Copypasta CSS
-  // eleventyConfig.addPassthroughCopy("css.css");
-
-  // Copypasta JS
+  // Copypasta
   eleventyConfig.addPassthroughCopy("js.js");
 
   // Copypasta assets
   eleventyConfig.addPassthroughCopy("assets/**.*");
-
-  // Inclusive language
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
 
   // Watchers
   eleventyConfig.addWatchTarget("./css/");
@@ -43,6 +38,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("sortCollection", (posts) => {
     return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
   });
+
+  // Plugins
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(inclusiveLangPlugin);
 };
 
 function draftPosts(post) {

@@ -16,6 +16,9 @@ devDependencies:
   '@11ty/eleventy-plugin-inclusive-language':
     specifier: ^1.0.3
     version: 1.0.3
+  '@11ty/eleventy-plugin-rss':
+    specifier: ^1.2.0
+    version: 1.2.0
   bun-types:
     specifier: latest
     version: 1.0.26
@@ -52,6 +55,16 @@ packages:
     resolution: {integrity: sha512-hQ+kD04aPphK2VYZZ3zqpOSwtvoFxLxxmi+5SVTvlqeQlWQ0SYA57Dg3W0Nj2LdshlYf6gwdGQq34O/MlyolYw==}
     dependencies:
       chalk: 4.1.2
+    dev: true
+
+  /@11ty/eleventy-plugin-rss@1.2.0:
+    resolution: {integrity: sha512-YzFnSH/5pObcFnqZ2sAQ782WmpOZHj1+xB9ydY/0j7BZ2jUNahn53VmwCB/sBRwXA/Fbwwj90q1MLo01Ru0UaQ==}
+    dependencies:
+      debug: 4.3.4
+      posthtml: 0.16.6
+      posthtml-urls: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@11ty/eleventy-utils@1.0.2:
