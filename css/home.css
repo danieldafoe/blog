@@ -51,16 +51,6 @@
     }
   }
 
-  .bio {
-    > p {
-      &:first-of-type {
-        /* font-family: var(--font-heading); */
-        /* font-size: 2rem; */
-        /* margin-block-end: 2rem; */
-      }
-    }
-  }
-
   .details {
     background-color: var(--details-bg-clr);
     color: var(--details-fg-clr);
@@ -160,7 +150,7 @@
 
     & span:first-child {
       text-decoration: underline;
-      transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
+      /* transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms; */
     }
 
     & span:last-child {
