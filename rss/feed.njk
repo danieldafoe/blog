@@ -24,10 +24,8 @@
     <language>{{ metadata.language }}</language>
     <image>
       <url>https://blog.danieldafoe.com/assets/me.jpeg</url>
-      <title>Daniel Dafoe</title>
-      <link>https://blog.danieldafoe.com</link>
-      <width>1280</width>
-      <height>1242</height>
+      <title>{{ metadata.title }}</title>
+      <link>{{ metadata.url }}</link>
     </image> 
     {%- for post in collections.posts | reverse %}
     {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
