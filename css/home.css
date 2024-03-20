@@ -23,14 +23,15 @@
     border-top-style: solid;
     color: var(--intro-fg-clr);
     order: 2;
-    padding: 2rem;
+    padding: 2rem 2rem 8rem;
 
     @media (width >= 768px) {
       border-top: 0;
       border-right: 8px solid var(--primary);
       border-image: linear-gradient(var(--primary), var(--secondary)) 50;
-      order: initial;
       flex-shrink: 0;
+      order: initial;
+      padding-block-end: 2rem;
       width: min(480px, 40%);
     }
 
@@ -38,16 +39,24 @@
       font-size: 2.1rem;
     }
 
-    a {
-      color: #fafafa;
-    }
-
     ul {
       list-style-type: none;
   
-      & li + li {
+      li + li {
         margin-block-start: .2lh;
       }
+
+      a {
+        color: var(--link-fg);
+      }
+    }
+  }
+
+  .bio {
+    margin-block-start: -.5lh;
+
+    @media (width >= 768px) {
+      margin-block-start: 0;
     }
   }
 
@@ -149,8 +158,7 @@
     }
 
     & span:first-child {
-      text-decoration: underline;
-      /* transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms; */
+      text-decoration: underline var(--link-underline-clr) 2px;
     }
 
     & span:last-child {

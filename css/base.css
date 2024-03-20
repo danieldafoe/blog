@@ -16,7 +16,8 @@
   --body-bg-clr: var(--darkest);
   --body-fg-clr: var(--lighter);
 
-  --link-fg-clr: var(--light);
+  --link-fg: var(--lightest);
+  --link-fg-clr: var(--lightest);
   --link-underline-clr: var(--secondary);
   --link-focus-bg-clr: var(--secondary);
   --link-focus-fg-clr: var(--darkest);
@@ -97,7 +98,6 @@ p {
 
 a {
   color: var(--link-fg-clr);
-  /* transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) 150ms; */
   text-decoration-thickness: 2px;
   text-decoration-color: var(--link-underline-clr);
 
