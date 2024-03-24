@@ -11,7 +11,7 @@ Around the web, I sometimes see "Skip&nbsp;to&nbsp;main" as the visual label for
 
 ## The issue with "Skip to main"
 
-Saying "Skip&nbsp;to&nbsp;main" isn't valuable to everyone. This is due to the technical nature of what a "main" even is. And no, it's not your goto character in a video game.
+Saying "Skip&nbsp;to&nbsp;main" isn't valuable to everyone. This is due to the technical nature of what a "main" even is. And no, it's not your go-to character in a video game.
 
 What "main" refers to in the context of the web is the <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main'>HTML <code>&lt;main&gt;</code> element</a>. This element should contain the most relevant information of any given web page you visit.
 

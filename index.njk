@@ -26,11 +26,10 @@ eleventyExcludeFromCollections: true
   <meta name='twitter:img' content='https://blog.danieldafoe.com/assets/og.jpg'>
   <meta name='twitter:img:alt' content='perspectives: a daniel dafoe blog'>
 
+  {% include '_fonts.njk' %}
+  
   <link rel="icon" href="/assets/favicon.svg">
   <link rel="stylesheet" href="/css.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
   <title>{{ title }}</title>
 </head>
@@ -39,14 +38,6 @@ eleventyExcludeFromCollections: true
 
     <div class="intro">
       <div class="bio">
-        <h2 class="font--impact">
-          Greetings
-        </h2>
-
-        {# <p>
-          Daniel Dafoe is an accomplished web&nbsp;engineer, accessibility&nbsp;expert, designer, and professor. By using his knowledge of different domains, he <strong>designs inclusive experiences</strong> people can understand and enjoy, and <strong>crafts thoughtful code</strong> that's efficient and understandable to other engineers.
-        </p> #}
-
         <p>
           Hey, I'm Daniel. I'm a designer and web engineer. I <strong>design inclusive experiences</strong> people can understand and enjoy, and <strong>craft thoughtful code</strong> that's efficient and understandable by other engineers.
         </p>
@@ -54,15 +45,6 @@ eleventyExcludeFromCollections: true
         <p>
           My passions are sociolinguistics, human languages, and user experience design. My goal for 2024 is to learn ASL (American Sign Language).
         </p>
-
-        {# <p>
-          I believe: 
-          <ul>
-            <li>Exercising is the key to a fit mind</li>
-            <li>Meetings are a waste of time</li>
-            <li>You should always sweat the small stuff</li>
-          </ul>
-        </p> #}
       </div>
 
       <h2 class="font--impact">
@@ -70,10 +52,14 @@ eleventyExcludeFromCollections: true
       </h2>
 
       {% set sortedPosts = collections.posts | sortCollection %}
-      <ul>
-        {% for post in sortedPosts | limit %}
-          <li>
-            <a href="{{ post.url }}">
+      {# 
+        Need to add roles since Safari will remove semantics
+        due to using `list-style-type: none` 😢
+       #}
+      <ul role="list">
+        {% for post in sortedPosts | limit(3) %}
+          <li role="listitem">
+            <a href="{{ post.url }}" class="perspective">
               <span>
                 {{- post.data.title -}}
               </span>
@@ -84,6 +70,12 @@ eleventyExcludeFromCollections: true
           </li>
         {% endfor %}
       </ul>
+
+      <h2 class="all-perspectives">
+        <a href="/posts/">
+          all posts
+        </a>
+      </h2>
       
     </div>
 
@@ -106,7 +98,7 @@ eleventyExcludeFromCollections: true
           <path class="triangle" d="M433.117 250L500.234 366.25H366L433.117 250Z" fill="#3D3D3D"/>
           <path class="triangle" d="M67.117 250.25L134.234 134H0L67.117 250.25Z" fill="#3D3D3D"/>
           <path class="triangle" d="M67.117 250L134.234 366.25H0L67.117 250Z" fill="#3D3D3D"/>
-          </svg>
+        </svg>
       </div>
     </div>
 

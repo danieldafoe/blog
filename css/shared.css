@@ -1,0 +1,31 @@
+.perspective {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    & span:first-child {
+      background-color: var(--link-focus-bg-clr);
+      color: var(--link-focus-fg-clr);
+    }
+  }
+
+  span:first-child {
+    order: 2;
+
+    text-decoration-color: var(--link-underline-clr);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+  }
+
+  span:last-child {
+    order: 1;
+
+    color: var(--light);
+    font-size: small;
+    font-style: italic;
+    margin-inline-end: .667rem;
+  }
+}
