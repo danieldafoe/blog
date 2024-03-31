@@ -41,7 +41,7 @@
     border: 16px solid var(--primary);
     border-image: linear-gradient(var(--primary), var(--secondary)) 50;
     color: var(--post-title-fg);
-    font-size: 3.2rem;
+    /* font-size: 3.2rem; */
     padding: 1.1rem;
     padding-block-start: 5rem;
 
@@ -89,19 +89,40 @@
     }
   }
 
+  img {
+    border: 8px double var(--primary);
+    border-radius: 8px;
+    height: auto;
+    max-width: 100%;
+    padding: 2px;
+  }
+
+  figure {
+    margin-block-end: 2rem;
+  }
+
+  figcaption {
+    font-size: .65rem;
+    text-align: center;
+  }
+
   .metadata {
     color: var(--post-metadata-fg);
-    font-size: 85%;
-    margin-block: 1rem;
+    font-size: 80%;
+    font-weight: 500;
+    margin-block: 2rem 0;
     padding-inline: 1.1rem;
-    text-align: center;
+    text-transform: uppercase;
 
     p {
+      border-image: url('../assets/gradient-line.svg');
+      border-bottom: 2px solid;
       margin: 0;
     }
 
     @media (width >= 768px) {
       padding-inline: 0;
+      text-align: center;
     }
   }
 
@@ -154,20 +175,33 @@
     }
   }
 
-  img {
-    border: 8px double var(--primary);
-    border-radius: 8px;
-    height: auto;
-    max-width: 100%;
-    padding: 2px;
+  .foo {
+    animation: rotate-in 2s;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    border: 0;
+    height: 160px;
+    margin-block: 1rem;
+    margin-inline: auto;
+    width: auto;
+    /* transform: rotateX(-90deg) skewX(45deg); */
+    opacity: .1;
+    transform: rotateZ(0) rotateX(-90deg) skewX(45deg) skewY(-135) scale(2);
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    opacity: .1;
+    /* transform: rotateX(-90deg) skewX(45deg); */
+    transform: rotateZ(0) rotateX(-90deg) skewX(45deg) skewY(-135deg) scale(2);
   }
 
-  figure {
-    margin-block-end: 2rem;
-  }
-
-  figcaption {
-    font-size: .65rem;
-    text-align: center;
+  to {
+    opacity: 1;
+    /* transform: rotateX(0) skewX(45deg); */
+    transform: rotateZ(45deg) rotateX(-135deg) skewX(0) skewY(-135deg) scale(2);
   }
 }

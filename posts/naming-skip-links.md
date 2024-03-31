@@ -57,6 +57,6 @@ This has no caveat or exceptions. This is by far the clearest of the presented o
 
 ## Recommendation
 
-I believe "Skip to main content" is the most understandable and the clearest call to action.
+"Skip to main content" is the most understandable and the clearest call to action.
 
 If you're in a position where you can implement a skip link but can't choose the content yourself (because you're an engineer and not a copywriter), having a skip link is far better than not having one.

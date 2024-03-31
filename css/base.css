@@ -65,10 +65,10 @@
 }
 
 html {
+  -webkit-font-smoothing: antialiased;
   font-size: 137.5%;
   font-family: var(--font-body);
   hanging-punctuation: first last;
-  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
   @media (width >= 768px) {
