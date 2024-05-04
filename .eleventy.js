@@ -23,7 +23,7 @@ module.exports = function(eleventyConfig) {
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     const newDate = new Date(date);
 
-    return `${months[newDate.getMonth()]} ${newDate.getDate()+1}, ${newDate.getFullYear()}`;
+    return `${months[newDate.getMonth()]} ${newDate.getFullYear()}`;
   });
 
   eleventyConfig.addFilter("limit", (arr) => {

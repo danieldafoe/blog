@@ -66,8 +66,8 @@
 
 html {
   -webkit-font-smoothing: antialiased;
-  font-size: 137.5%;
   font-family: var(--font-body);
+  font-size: 137.5%;
   hanging-punctuation: first last;
   text-rendering: optimizeLegibility;
 
@@ -85,7 +85,7 @@ body {
   background-color: var(--body-bg-clr);
   color: var(--body-fg-clr);
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.54;
   
   @media (width >= 768px) {
     /* padding: 0 2rem; */
@@ -100,6 +100,7 @@ a {
   color: var(--link-fg-clr);
   text-decoration-thickness: 2px;
   text-decoration-color: var(--link-underline-clr);
+  text-underline-offset: 3px;
 
   &:focus,
   &:hover {

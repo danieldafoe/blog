@@ -46,7 +46,7 @@
       list-style-type: none;
   
       li + li {
-        margin-block-start: .2lh;
+        margin-block-start: .6lh;
       }
 
       a {
