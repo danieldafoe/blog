@@ -118,7 +118,14 @@
     p {
       border-image: url('../assets/gradient-line.svg');
       border-bottom: 2px solid;
+      letter-spacing: 4px;
       margin: 0;
+
+      @media (width >= 768px) {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+      }
     }
 
     @media (width >= 768px) {
@@ -144,6 +151,8 @@
     > p {
       &:first-of-type {
         /* This is the intro paragraph */
+        font-size: larger;
+        font-weight: bolder;
         padding-block-start: 1rem;
       }
     }
