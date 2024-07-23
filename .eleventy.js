@@ -27,7 +27,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("limit", (arr) => {
-    return arr.slice(0, 4);
+    return arr.slice(0, 3);
   });
 
   // {
