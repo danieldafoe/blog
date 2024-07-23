@@ -54,7 +54,7 @@ This has no caveat or exceptions. This is by far the clearest of the presented o
 
 <strong>Judgment:</strong> Avoid.
 
-<strong>Rationale:</strong> Everything on your web page is content. How will someone know which content they're skipping to? If you tell them you're skipping to content, will they know that they missed other information?
+<strong>Rationale:</strong> Again, saying someone will skip to "main" presumes they have knowledge of what a &lt;main&gt; is in the first place. This is too technical for everyone to understand.
 
 
 ## Recommendation

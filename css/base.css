@@ -1,7 +1,7 @@
 :root {
   --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-  /* --font-body: Georgia, Times, 'Times New Roman', serif; */
+  /* --font-serif: Georgia, Times, 'Times New Roman', serif; */
 
   --semi-dark: hsl(0, 0%, 20%);
   --dark: hsl(0, 0%, 15%);
@@ -100,7 +100,7 @@ a {
   background-color: transparent;
   border-radius: 4px;
   color: var(--link-fg-clr);
-  padding-inline: 4px; /* Vision Pro aesthetics */
+  padding-inline: 2px; /* Vision Pro aesthetics */
   text-decoration-color: var(--link-underline-clr);
   text-decoration-style: solid;
   text-decoration-thickness: 2px;
