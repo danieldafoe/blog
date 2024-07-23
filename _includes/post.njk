@@ -37,6 +37,7 @@ summary: 'No summary'
   <link rel="icon" href="https://blog.danieldafoe.com/assets/favicon.svg">
 
   <title>{{ shareTitle }} - a daniel dafoe perspective</title>
+  <script src="/js.js" type="text/javascript"></script>
 </head>
 <body class='post'>
   <article>
@@ -48,15 +49,18 @@ summary: 'No summary'
         <p>
           {{ page.date | prettyDate }}
         </p>
-        {# <ul class="tags">
-          {% for tag in tags %} <li>{{ tag }}</li> {% endfor %}
-        </ul> #}
       </div>
+
+      <ul class="tags" aria-label="Blog post categories">
+        {% for tag in tags %} <li>{{ tag }}</li> {% endfor %}
+      </ul>
     </header>
 
     <div class="post-content">
       {{ content | safe }}
     </div>
+
+    {# <img class="foo" src="/assets/gradient-line.svg" alt="" /> #}
     
     <div class="post-footer">
       The impressive thoughtpiece you just read was written by none other than <a href='https://danieldafoe.com'>Daniel Dafoe</a>—a web engineer, designer, and accessibility expert living in California.

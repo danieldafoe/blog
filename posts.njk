@@ -44,7 +44,7 @@ eleventyExcludeFromCollections: true
   
       {% set sortedPosts = collections.posts | sortCollection %}
       <ul>
-        {% for post in sortedPosts | limit %}
+        {% for post in sortedPosts %}
           <li>
             <a href="{{ post.url }}" class="perspective">
               <span>

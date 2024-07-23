@@ -7,7 +7,9 @@ date: 2024-03-18
 tags: ['accessibility', 'copywriting']
 ---
 
-Around the web, I sometimes see "Skip&nbsp;to&nbsp;main" as the visual label for skip links that take people to the main content of the page. This is problematic.
+<p class='intro'>
+  Around the web, I sometimes see "Skip&nbsp;to&nbsp;main" as the visual label for skip links that take people to the main content of the page. This is problematic.
+</p>
 
 ## The issue with "Skip to main"
 
