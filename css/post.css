@@ -15,6 +15,7 @@
   header {
     margin-inline: auto;
     text-wrap: balance;
+    max-width: 100%;
 
     @media (width >= 768px) {
       max-width: 84%;
@@ -41,6 +42,7 @@
     border: 16px solid var(--primary);
     border-image: linear-gradient(var(--primary), var(--secondary)) 50;
     color: var(--post-title-fg);
+    hyphens: auto;
     padding: 1.1rem;
     padding-block-start: 5rem;
 
@@ -163,7 +165,6 @@
     padding-block-end: 1rem;
 
     > .intro {
-      /* This is the intro paragraph */
       font-size: larger;
       font-weight: bolder;
       padding-block-start: 1rem;
