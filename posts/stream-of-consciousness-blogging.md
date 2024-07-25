@@ -10,9 +10,9 @@ tags: ['introspection', 'exploration']
 ## Audio
 
 <audio controls>
-  <source src="../../assets/my-first-audio-blog-post.m4a" />
+  <source src="../../assets/stream-of-consciousness-blog-posts.m4a" />
   <p>
-    Download <a href="../../assets/my-first-audio-blog-post.m4a" download="../../assets/my-first-audio-blog-post.m4a">Download this blog post (M4A)</a>
+    Download <a href="../../assets/stream-of-consciousness-blog-posts.m4a" download="../../assets/stream-of-consciousness-blog-posts.m4a">Download this blog post (M4A)</a>
   </p>
 </audio>
 
@@ -32,4 +32,4 @@ But that's okay. Um, thanks for listening.
 
 ## Download
 
-<a href="../../assets/my-first-audio-blog-post.m4a" download="../../assets/my-first-audio-blog-post.m4a">Download this blog post (.m4a)</a>
+<a href="../../assets/stream-of-consciousness-blog-posts.m4a" download="../../assets/stream-of-consciousness-blog-posts.m4a">Download this blog post (.m4a)</a>
