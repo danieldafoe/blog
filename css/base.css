@@ -136,5 +136,8 @@ audio {
   /* border: 8px solid var(--primary); */
   /* border-image: linear-gradient(var(--primary), var(--secondary)) 50; */
   border-radius: 8px;
+  display: block;
+  height: calc(.86rem + 1lh);
   padding: .48rem;
+  width: 100%;
 }
