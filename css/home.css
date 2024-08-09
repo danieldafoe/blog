@@ -116,7 +116,7 @@
     color: var(--lightest);
     font-size: var(--type-h3-size);
     font-size: 1.4rem;
-    letter-spacing: -1px;
+    letter-spacing: -.5px;
     padding-block-end: .583rem;
 
     @media (width >= 768px) {
