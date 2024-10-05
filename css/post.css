@@ -152,7 +152,7 @@
 
   .post-content,
   .post-footer {
-    padding: 1rem 1rem 0;
+    padding: 2rem 1rem 0;
     max-width: 48ch;
     
     @media (width >= 768px) {
